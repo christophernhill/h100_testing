@@ -22,7 +22,7 @@ ln -s `pwd`/.spack ~/.spack
 
 # Make sure basic bootstrap tools are installed  
 # ( g++ was missing )
-dnf -y group install "Development Tools"
+# dnf -y group install "Development Tools"
 
 
 . spack/share/spack/setup-env.sh
