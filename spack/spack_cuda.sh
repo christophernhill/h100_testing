@@ -4,7 +4,7 @@
 # Install fresh CUDA
 #
 
-wdir=/tmp/${user}/spack_install
+wdir=/tmp/${USER}/spack_install
 mkdir -p ${wdir}
 cd ${wdir}
 
