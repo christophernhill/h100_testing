@@ -45,3 +45,5 @@ echo "spack load gcc@${gccver}"
 echo "spack load cuda@${cudaver}"
 echo ")"
 
+# spack install py-torchvision@${gccver}
+
