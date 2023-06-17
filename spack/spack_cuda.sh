@@ -10,10 +10,11 @@ cd ${wdir}
 
 gccver=12.3.0
 cudaver=12.1.1
+spackver=v0.20.0
 
 git clone https://github.com/spack/spack.git
 cd spack
-git checkout v0.20.0
+git checkout ${spackver}
 cd ..
 
 rm ~/.spack
