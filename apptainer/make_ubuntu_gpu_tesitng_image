@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# Script showing container create setup for running on H100
+#
+
+# Setup and switch to a working directory
+wdir=/nobackup/users/cnh/h100-testing/tmp
+ldir=apptainer-gpu-test
+mkdir -p ${wdir}
+cd $[wdir}
+# \rm -fr ${ldir}
+mkdir -p ${ldir}
+cd ${ldir}
+
+# Create a writable ubuntu container to start from
+apptainer build --sandbox ubuntu/ docker://ubuntu:22.04
+
+# Add base sftware
+# apt update
+# apt install build-essential
+# apt install libboost-program-options-dev
+# apt install cmake
+# apt install python3
+# cd /tmp/spack_install
+# . ./spack/share/spack/setup-env.sh
+# spack load cuda
+# export CUDA_PATH=/tmp/spack_install/spack/opt/spack/linux-rocky8-icelake/gcc-12.3.0/cuda-12.1.1-gk5mtxlbghi2w2tcqa5iplzzmonp5ypf
+# git clone https://github.com/NVIDIA/nvbandwidth.git
+# git clone https://github.com/NVIDIA/cuda-samples.git
+# 
