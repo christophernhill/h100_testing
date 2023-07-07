@@ -1,0 +1,16 @@
+export APPTAINER_CACHEDIR=/tmp/cnh/apptainer-temporary-cache
+apptainer run --nv docker://nvcr.io/nvidia/tensorflow:23.06-tf2-py3
+
+
+import tensorflow as tf
+tf.sysconfig.get_build_info()
+tf.config.list_physical_devices('GPU')
+
+
+
+/mnt/h100-testing/minic/benchmarks/scripts/tf_cnn_benchmarks
+python3 tf_cnn_benchmarks.py --batch_size=1000 --num_batches=500 --display_every=10 --model=resnet50 --use_fp8 --use_numa_affinity --enable_optimizations --variable_update=parameter_server 
+
+apptainer run --nv --bind /nobackup/users/cnh:/mnt docker://nvcr.io/nvidia/tensorflow:23.06-tf2-py3
+
+srun --gres=gpu:8 -p sched_oliva --time=12:00:00 --mem=0 --pty /bin/bash
