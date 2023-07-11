@@ -1,5 +1,5 @@
 module use /software/spack/share/spack/lmod/linux-rocky8-x86_64/Core
-module load apptainer/1.1.7-x86_64  
+module load apptainer/1.1.7-x86_64   squashfuse/0.1.104-x86_64 squashfs-mount/0.1.0-x86_64 squashfs/4.5.1-x86_64 
 
 export APPTAINER_CACHEDIR=/tmp/cnh/apptainer-temporary-cache
 apptainer run --nv docker://nvcr.io/nvidia/tensorflow:23.06-tf2-py3
