@@ -10,7 +10,7 @@ gcc -g -o mig -I`pkgconf --variable=includedir nvidia-ml-12.1` -L`pkgconf --vari
 ./mig
 ```
 
-this produces a set of `.conf` files for slurm e.g.
+this produces  `.conf` files for slurm `gres.conf` and `cgroup_allowed_devices_file.conf` e.g.
 
 ```
 cat gres.conf
