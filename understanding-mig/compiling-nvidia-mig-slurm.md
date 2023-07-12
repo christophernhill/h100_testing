@@ -29,3 +29,31 @@ Name=gpu Type=1g.10gb File=/dev/nvidia-caps/nvidia-cap84
 :
 :
 ```
+
+and
+
+```
+cat cgroup_allowed_devices_file.conf
+```
+
+```
+# GPU 0
+/dev/nvidia0
+
+# GPU 0 MIG /proc/driver/nvidia/capabilities/gpu0/mig/gi7/ci0/access
+/dev/nvidia-caps/nvidia-cap67
+
+# GPU 0 MIG /proc/driver/nvidia/capabilities/gpu0/mig/gi8/ci0/access
+/dev/nvidia-caps/nvidia-cap76
+
+# GPU 0 MIG /proc/driver/nvidia/capabilities/gpu0/mig/gi9/ci0/access
+/dev/nvidia-caps/nvidia-cap85
+
+:
+:
+/dev/null
+/dev/urandom
+/dev/zero
+/dev/cpu/*/*
+/dev/pts/*
+```
