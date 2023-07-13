@@ -34,3 +34,28 @@ spack install go arch=x86_64
 spack module tcl  refresh -y
 spack module lmod refresh -y
 ```
+
+```
+
+```
+
+Next create a config file e.g.
+
+```
+$ cat config.yaml
+
+version: v1
+mig-configs:
+
+        all-disabled:
+        - devices: all
+          mig-enabled: false
+
+        all-mig:       
+        - devices: all
+          mig-enabled: true
+          mig-devices:
+            1g.10gb: 7
+
+
+```
