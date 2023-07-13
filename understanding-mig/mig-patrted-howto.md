@@ -26,6 +26,7 @@ To install go via spack
     
 
 ```
+spack spec -t go arch=x86_64
 spack install go arch=x86_64
 ```
 
