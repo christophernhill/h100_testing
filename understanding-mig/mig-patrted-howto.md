@@ -36,7 +36,10 @@ spack module lmod refresh -y
 ```
 
 ```
-
+module use `pwd`/spack/spack/share/spack/lmod/linux-rocky8-x86_64/gcc/12.2.0
+module load go
+cd mig-parted
+make
 ```
 
 Next create a config file e.g.
