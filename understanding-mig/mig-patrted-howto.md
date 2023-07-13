@@ -62,3 +62,13 @@ mig-configs:
 
 
 ```
+
+Now try applying
+
+```
+./nvidia-mig-parted  apply -f config.yaml -c all-disabled
+```
+
+```
+./nvidia-mig-parted  apply -f config.yaml -c all-mig
+```
