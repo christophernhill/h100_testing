@@ -12,6 +12,8 @@ First make sure go is installed.
 
 To install go via spack
 
+  `$ export SPACK_USER_CONFIG_PATH=${MIG_PARTED_ENV_ROOT}/spack_user_etc`
+  
   `$ cat spack_user_etc/upstreams.yaml`
   
   ```
