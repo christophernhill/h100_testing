@@ -28,3 +28,8 @@ To install go via spack
 ```
 spack install go arch=x86_64
 ```
+
+```
+spack module tcl  refresh -y
+spack module lmod refresh -y
+```
