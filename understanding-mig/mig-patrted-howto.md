@@ -12,7 +12,7 @@ First make sure go is installed.
 
 To install go via spack
 
-  `cat spack_user_etc/upstreams.yaml`
+  `$ cat spack_user_etc/upstreams.yaml`
   
   ```
     upstreams:
