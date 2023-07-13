@@ -22,9 +22,9 @@ To install go via spack
                 install_tree: /nfs/software001/home/software-r8-x86_64/spack-20230328/opt/spack
                 modules:
                         tcl: /nfs/software001/home/software-r8-x86_64/spack-20230328/share/spack/modules
-  ```
+ ```
     
 
 ```
-
+spack install go arch=x86_64
 ```
