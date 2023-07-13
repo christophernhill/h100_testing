@@ -12,7 +12,7 @@ First make sure go is installed.
 
 To install go via spack
 
-    1. 
+  1. 
     ```
     
     ```
