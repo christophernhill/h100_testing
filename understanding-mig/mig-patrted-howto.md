@@ -17,8 +17,8 @@ To install go via spack
   `$ cat spack_user_etc/upstreams.yaml`
   
   ```
-    upstreams:
-        spack-instance-1:
+  upstreams:
+      spack-instance-1:
                 install_tree: /nfs/software001/home/software-r8-x86_64/spack-20230328/opt/spack
                 modules:
                         tcl: /nfs/software001/home/software-r8-x86_64/spack-20230328/share/spack/modules
